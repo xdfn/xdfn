@@ -39,7 +39,7 @@ Ext.define('xdfn.info.ui.InfoNews', {
                     	xtype: 'textfield',
                         margin: '2 20 10 0',
                         name: 'V_TITLE',
-                        fieldLabel: '公告标题'
+                        fieldLabel: '资讯标题'
                     },
                     {
                         xtype: 'datefield',
