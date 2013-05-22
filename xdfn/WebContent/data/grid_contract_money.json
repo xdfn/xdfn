@@ -1,0 +1,7 @@
+{
+success:true,
+total: 50,
+data:[
+{ID_VIEW:'100000001', V_PRO_NAME_VIEW:'1000002', V_CON_CODE_VIEW:'dfsdfasdf', V_CON_NAME_VIEW:'fsadfasdf', V_CUST_NAME_VIEW:'fsadfsa', V_HTTS_VIEW:50, N_HTZJ_VIEW:50000000, V_HTZXZT_VIEW:'asdfasd', V_GSBSC_VIEW:'asdfasd', V_ZBQ_VIEW:'asdfasd', V_BZJ_VIEW:'asdfas', D_SIGN_DATE_VIEW:'2011-11-18'}
+]
+}

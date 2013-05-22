@@ -1,0 +1,20 @@
+{
+children:[{
+    V_NODE_NAME_VIEW: '湘电风能',
+    children: [{
+        V_NODE_NAME_VIEW: '销售处',
+        children: [{
+            V_NODE_NAME_VIEW: '驻外办',
+            children: [{
+                ID_VIEW: '1121',
+                V_NODE_NAME_VIEW: '太原办',
+                leaf: true
+            },{
+                ID_VIEW: '1122',
+                V_NODE_NAME_VIEW: '蒙辽办',
+                leaf: true
+            }]
+        }]
+    }]
+}]
+}

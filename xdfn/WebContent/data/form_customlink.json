@@ -1,0 +1,17 @@
+{
+    success: true,
+    data: {
+        ID:'100002121', 
+        V_TRUE_NAME:'樊建华', 
+        V_PST:'业务经理', 
+        V_PHONE1:'18607318888', 
+        V_PHONE2:'18607318888', 
+        V_PHONE3:'0731-58888888', 
+        V_FAX:'0731-58888888', 
+        V_EMAIL:'xdfn@xdfn.com.cn', 
+        V_QQ:'1111111111', 
+        V_MSN:'xdfn@xdfn.com.cn', 
+        V_ADDRESS:'湖南省湘潭市', 
+        V_MEMO:'属实'
+    }
+}

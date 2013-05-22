@@ -1,0 +1,19 @@
+{
+    success: true,
+    data: {
+    ID_VIEW:'100002121', 
+    D_DATETIME_VIEW:'2011-10-25 12:30:30', 
+    V_TITLE_VIEW:'三个地方过', 
+    V_CONTENT_VIEW:'收费的感受到分公司共发生过', 
+    V_TYPE_SHIYOU_VIEW:'出差', 
+    V_TYPE_BELONG_VIEW:'项目', 
+    V_LEVEL_VIEW:'紧急', 
+    V_REPORT_VIEW:'总经理', 
+    V_FINISH_VIEW:'完成', 
+    V_WORK_SUMMARY_VIEW:'是梵蒂冈', 
+    V_APPROVE_VIEW:'已批示', 
+    V_VERIFY_VIEW:'属实',
+    V_PRO_NAME_VIEW:'富商大贾第三个是个'
+    }
+
+}

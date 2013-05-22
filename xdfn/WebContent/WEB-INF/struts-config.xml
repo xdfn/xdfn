@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <!-- Start: 动态FORM 配置-->
+  <form-beans >
+    <form-bean name="loginForm" type="com.xdfn.struts.form.LoginForm" />
+    <form-bean name="loginForm" type="com.xdfn.struts.form.UserManageForm" />
+    <form-bean name="loginForm" type="com.xdfn.struts.form.DeptManageForm" />
+  </form-beans>
+  <!-- End：动态FORM 配置-->
+
+  <global-exceptions />
+
+  <global-forwards >
+    <forward name="indexForword" path="/login.jsp" />
+	<forward name="errorForword" path="/error_msg.jsp" />
+  </global-forwards>
+
+  <!-- Start: Action 配置-->
+  <action-mappings >
+  	<action
+      attribute="deptManageForm"
+      input="/WEB-INF/web/jsp/deptManage/list.jsp"
+      name="deptManageForm"
+      path="/initOrg"
+      scope="request"
+      parameter="method" 
+      type="org.springframework.web.struts.DelegatingActionProxy" >
+      <forward name="faxlist" path="/faxManage/faxlist.jsp"></forward>
+    </action>
+  
+    <action
+      attribute="loginForm"
+      input="/login.jsp"
+      name="loginForm"
+      path="/login"
+      scope="request"
+      parameter="method"
+      type="org.springframework.web.struts.DelegatingActionProxy" >
+      <forward name="success" path="/loginAfter.jsp"></forward>
+      <forward name="usermanage" path="/userManage.jsp"></forward>
+      <forward name="master" path="/master.jsp"></forward>
+      <forward name="custom" path="/custom.jsp"></forward>
+      <forward name="employee" path="/employee.jsp"></forward>
+      <forward name="planer" path="/planer.jsp"></forward>
+      <forward name="repairer" path="/repairer.jsp"></forward>
+    </action>
+    
+    <action
+      attribute="loginForm"
+      input="/login.jsp"
+      name="loginForm"
+      path="/router"
+      scope="request"
+      parameter="method"
+      type="org.springframework.web.struts.DelegatingActionProxy" >
+      <forward name="usermanage" path="/WEB-INF/web/jsp/userManage/listExt.jsp"></forward>
+    </action>
+    
+    <action
+      attribute="userManageForm"
+      input="/WEB-INF/web/jsp/userManage/list.jsp"
+      name="userManageForm"
+      path="/userManage"
+      scope="request"
+      parameter="method" 
+      type="org.springframework.web.struts.DelegatingActionProxy" >
+      <forward name="list" path="/userManage/list.jsp"></forward>
+      <forward name="listExt" path="/WEB-INF/web/jsp/userManage/listExt.jsp"></forward>
+      <forward name="edit" path="/WEB-INF/web/jsp/userManage/edit.jsp"></forward>
+      <forward name="insert" path="/WEB-INF/web/jsp/userManage/add.jsp"></forward>
+      <forward name="editSelf" path="/WEB-INF/web/jsp/userManage/editSelf.jsp"></forward>
+      <forward name="editSelfOpe" path="/WEB-INF/web/jsp/userManage/editSelfOpe.jsp"></forward>
+    </action>
+    
+    <action
+      attribute="deptManageForm"
+      input="/WEB-INF/web/jsp/deptManage/list.jsp"
+      name="deptManageForm"
+      path="/deptManage"
+      scope="request"
+      parameter="method" 
+      type="org.springframework.web.struts.DelegatingActionProxy" >
+      <forward name="list" path="/deptManage/list.jsp"></forward>
+      <forward name="edit" path="/WEB-INF/web/jsp/deptManage/edit.jsp"></forward>
+      <forward name="editDept" path="/WEB-INF/web/jsp/deptManage/deptEdit.jsp"></forward>
+      <forward name="editUser" path="/WEB-INF/web/jsp/userManage/userList.jsp"></forward>
+      <forward name="insert" path="/WEB-INF/web/jsp/deptManage/add.jsp"></forward>
+      <forward name="editSelf" path="/WEB-INF/web/jsp/deptManage/editSelf.jsp"></forward>
+      <forward name="editSelfOpe" path="/WEB-INF/web/jsp/deptManage/editSelfOpe.jsp"></forward>
+    </action>
+    
+    <action
+      attribute="deptManageForm"
+      input="/WEB-INF/web/jsp/deptManage/list.jsp"
+      name="deptManageForm"
+      path="/cusManage"
+      scope="request"
+      parameter="method" 
+      type="org.springframework.web.struts.DelegatingActionProxy" >
+      <forward name="cusInfolist" path="/cusManage/cuslist.jsp"></forward>
+      <forward name="inistlist" path="/cusManage/inistlist.jsp"></forward>
+    </action>
+    
+    <action
+      attribute="deptManageForm"
+      input="/WEB-INF/web/jsp/deptManage/list.jsp"
+      name="deptManageForm"
+      path="/faxManage"
+      scope="request"
+      parameter="method" 
+      type="org.springframework.web.struts.DelegatingActionProxy" >
+      <forward name="faxlist" path="/faxManage/faxlist.jsp"></forward>
+    </action>
+    
+    <action
+      attribute="deptManageForm"
+      input="/WEB-INF/web/jsp/deptManage/list.jsp"
+      name="deptManageForm"
+      path="/projectMgr"
+      scope="request"
+      parameter="method" 
+      type="org.springframework.web.struts.DelegatingActionProxy" >
+      <forward name="faxlist" path="/faxManage/faxlist.jsp"></forward>
+    </action>
+    
+    <action
+      attribute="deptManageForm"
+      input="/WEB-INF/web/jsp/deptManage/list.jsp"
+      name="deptManageForm"
+      path="/infoPub"
+      scope="request"
+      parameter="method" 
+      type="org.springframework.web.struts.DelegatingActionProxy" >
+      <forward name="faxlist" path="/faxManage/faxlist.jsp"></forward>
+      <forward name="news" path="/news_do.jsp"></forward>
+      <forward name="bullet" path="/bulletin_do.jsp"></forward>
+    </action>
+    
+    <action
+      attribute="deptManageForm"
+      input="/WEB-INF/web/jsp/deptManage/list.jsp"
+      name="deptManageForm"
+      path="/proExec"
+      scope="request"
+      parameter="method" 
+      type="org.springframework.web.struts.DelegatingActionProxy" >
+      <forward name="faxlist" path="/faxManage/faxlist.jsp"></forward>
+    </action>
+    
+    <action
+      attribute="deptManageForm"
+      input="/WEB-INF/web/jsp/deptManage/list.jsp"
+      name="deptManageForm"
+      path="/serRec"
+      scope="request"
+      parameter="method" 
+      type="org.springframework.web.struts.DelegatingActionProxy" >
+      <forward name="faxlist" path="/faxManage/faxlist.jsp"></forward>
+    </action>
+  </action-mappings>
+  
+  
+  <!-- End: Action 配置-->
+  
+  <!-- 过滤器-->
+  <controller nocache="true" inputForward="true" maxFileSize="10M"
+		processorClass="com.xdfn.initprocessor.InitRequestProcessor" />
+
+  <!-- 资源文件-->
+  <message-resources parameter="com.xdfn.struts.ApplicationResources" />
+  
+  <!-- spring plug-in -->
+  <plug-in className="org.springframework.web.struts.ContextLoaderPlugIn">
+    <set-property property="contextConfigLocation" value="/WEB-INF/applicationContext.xml" />
+  </plug-in>
+</struts-config>
+

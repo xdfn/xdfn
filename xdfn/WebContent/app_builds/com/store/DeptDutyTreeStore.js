@@ -1,0 +1,1 @@
+Ext.define("xdfn.com.store.DeptDutyTreeStore",{extend:"Ext.data.TreeStore",constructor:function(a){var b=this;a=a||{};b.callParent([Ext.apply({root:{expanded:true},fields:[{name:"ID_VIEW",type:"string"},{name:"V_PARENT_ID_VIEW",type:"string"},{name:"N_NODE_LEVEL_VIEW",type:"number"},{name:"N_NODE_TYPE_VIEW",type:"number"},{name:"V_NODE_NAME_VIEW",type:"string"}]},a)])}});

@@ -1,0 +1,16 @@
+{
+success:true,
+data:
+{ID_VIEW:'100000012', 
+V_TYPE_VIEW:'保证金', 
+N_SUM_VIEW:700000, 
+D_PAY_DATE_VIEW:'2011-10-31', 
+V_PAY_STATUS_VIEW:'已付',
+V_PAY_MODE_VIEW:'电汇',
+V_PAYEE_VIEW:'大唐集团',
+V_PAYER_VIEW:'樊建华',
+V_INVOICE_VIEW:'已回',
+V_SUBMIT_PAY_VIEW:'已报销',
+V_REMARK_VIEW:'撒大法师打发撒打发'
+}
+}

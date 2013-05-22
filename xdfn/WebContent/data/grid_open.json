@@ -1,0 +1,8 @@
+{
+success:true,
+total: 50,
+data:[
+{ID_VIEW: '10000001', V_MANU_VIEW: '撒大法师打发的', V_MACHINE_VIEW: '拉进来看见了两款', N_CAP_VIEW: 2, N_SUM_NUM_VIEW: 56, N_SUM_MONEY_VIEW:5,N_SUM_PRICE_VIEW:10,V_MEMO_VIEW:'阿道夫 萨拉的疯狂啦'}
+
+]
+}

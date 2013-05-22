@@ -1,0 +1,8 @@
+{
+success:true,
+total: 50,
+data:[
+{ID_VIEW: '1000004', V_BID_CODE_VIEW: '撒大法师打发的', V_BID_ADDR_VIEW: '拉进来看见了两款', V_BID_STATE_VIEW: '标书制作', D_BID_DEATH_DATE_VIEW: '2011-10-28', D_BID_OPEN_DATE_VIEW:'2011-11-18',V_DELEGATE_VIEW:'阿道夫',V_TENDERS_VIEW:'阿道夫',V_AUDI_VIEW:'阿道夫'}
+
+]
+}

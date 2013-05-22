@@ -1,0 +1,1 @@
+Ext.define("xdfn.info.InfoBBS",{extend:"xdfn.info.ui.InfoBBS",initComponent:function(){var a=this;a.callParent(arguments)}});

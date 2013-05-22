@@ -1,0 +1,21 @@
+{
+success:true,
+data:{
+ID_VIEW:'100002121', 
+V_CONTRACT_NAME_VIEW:'大唐风能', 
+D_CREATE_TIME_VIEW:'2011-12-15 09:30:29', 
+V_TITLE_VIEW:'分公司放到各收费过', 
+V_OFFICE_BRANCH_VIEW:'内蒙办', 
+V_DUTYER_VIEW:'樊建华', 
+V_CUST_NAME_VIEW:'内蒙古发电厂', 
+V_CUST_LINKER_VIEW:'刘强', 
+V_PHONE_VIEW:'0731-88888888', 
+V_FAX_VIEW:'0731-88888888', 
+D_RESPONSE_TIME_VIEW:'2011-11-15', 
+V_STATUS_VIEW:'未处理',
+V_HANDLER_VIEW:'撒大法师的',
+V_DES_VIEW: '撒旦法的是撒旦法',
+V_REPLY_VIEW: '个环境规划及规范化将'
+
+}
+}

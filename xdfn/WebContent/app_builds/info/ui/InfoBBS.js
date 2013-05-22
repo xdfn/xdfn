@@ -1,0 +1,1 @@
+Ext.define("xdfn.info.ui.InfoBBS",{extend:"Ext.panel.Panel",id:"InfoBBS",closable:true,iconCls:"info_tabs",title:"风吧",initComponent:function(){var a=this;a.callParent(arguments)}});

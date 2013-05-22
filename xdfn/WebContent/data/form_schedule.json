@@ -1,0 +1,14 @@
+{
+    success: true,
+    data: {
+        ID: '10000001',
+        V_TYPE_SHIYOU: '会议',
+        V_TYPE_BELONG: '项目',
+        V_LEVEL: '紧急',
+        V_REPORT: '总经理',
+        V_PRO_ID: '10000002121',
+        V_TITLE: '撒解放军afklsd家乐福是大楼附近 ',
+        V_CONTENT: '阿警方了解大煞风景阿隆索的积分卡辣椒水的离开福建爱上对方',
+        V_WORK_SUMMARY: '<div>阿里附近拉客京东方   了解法律的卷发绝世独立法律纠纷绿卡时间的法律</div>'
+    }
+}

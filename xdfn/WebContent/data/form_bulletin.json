@@ -1,0 +1,10 @@
+{
+success:true,
+data: {
+ID:'100000001', 
+V_TITLE:'AFADSFADSF', 
+V_CONTENT:'AFASDFDSFASDF', 
+D_PUB_DATE:'2011-10-31 22:20:30', 
+V_PUBER:'FSDFF'
+}
+}

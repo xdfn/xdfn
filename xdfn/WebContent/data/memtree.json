@@ -1,0 +1,63 @@
+{
+children:[{
+    V_NODE_NAME_VIEW: '湘电风能',
+    children: [{
+        V_NODE_NAME_VIEW: '销售处',
+        children: [{
+            V_NODE_NAME_VIEW: '本部',
+            children: [{
+                V_NODE_NAME_VIEW: '业务科',
+                children: [{
+                    V_NODE_NAME_VIEW: '樊建华',
+                    ID_VIEW: 'fafasdfasdfa12132',
+                    leaf: true
+                },{
+                    V_NODE_NAME_VIEW: '刘沙',
+                    ID_VIEW: 'fasdfasdfasdfa123',
+                    leaf: true
+                },{
+                    V_NODE_NAME_VIEW: '刘强',
+                    ID_VIEW: 'dfgdfsdsfasasdf11',
+                    leaf: true
+                }]
+            },{
+                V_NODE_NAME_VIEW: '售后服务中心',
+                leaf: true
+            }]
+        },{
+            V_NODE_NAME_VIEW: '驻外办',
+            children: [{
+                V_NODE_NAME_VIEW: '太原办',
+                children: [{
+                    V_NODE_NAME_VIEW: '樊建华',
+                    ID_VIEW: 'fafasdfasdfa12132',
+                    leaf: true
+                },{
+                    V_NODE_NAME_VIEW: '刘沙',
+                    ID_VIEW: 'fasdfasdfasdfa123',
+                    leaf: true
+                },{
+                    V_NODE_NAME_VIEW: '刘强',
+                    ID_VIEW: 'dfgdfsdsfasasdf11',
+                    leaf: true
+                }]
+            },{
+                V_NODE_NAME_VIEW: '蒙辽办',
+                children: [{
+                    V_NODE_NAME_VIEW: '樊建华',
+                    ID_VIEW: 'fafasdfasdfa12132',
+                    leaf: true
+                },{
+                    V_NODE_NAME_VIEW: '刘沙',
+                    ID_VIEW: 'fasdfasdfasdfa123',
+                    leaf: true
+                },{
+                    V_NODE_NAME_VIEW: '刘强',
+                    ID_VIEW: 'dfgdfsdsfasasdf11',
+                    leaf: true
+                }]
+            }]
+        }]
+    }]
+}]
+}

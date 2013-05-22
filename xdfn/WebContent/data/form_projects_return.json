@@ -1,0 +1,25 @@
+{
+success: true,
+data: 
+{ID_VIEW: '100000001', 
+V_PRO_NO_VIEW: 'FSDFSDAFASDFA', 
+V_PRO_NAME_VIEW: '地方噶撒旦法公司', 
+D_PRO_PRE_TIME_VIEW: '2011-12-12 08:30:30', 
+D_LAST_UPDATE_VIEW: '2011-12-12 08:30:30', 
+V_PRO_PORER_VIEW: '樊建华', 
+V_PRO_SOURCE_VIEW: '本部', 
+V_PRO_TYPE_VIEW: '国内项目', 
+V_OFFICE_BRANCH_VIEW: '内蒙办', 
+V_PROVINCE_VIEW: '内蒙古', 
+V_INNER_MANAGER_VIEW: '樊建华', 
+V_OUT_MANAGER_VIEW: '刘沙', 
+V_OUT_MASTER_VIEW: '刘强', 
+V_PRO_PHASE_VIEW: '项目预报', 
+V_FIN_CUSTOM: '内蒙发电厂', 
+V_DESIGN_VIEW: '中国风能设计院', 
+V_WIND_ADDR_VIEW: '撒大法师的', 
+V_WIND_TYPE_VIEW: '陆地平原', 
+V_PRO_PROCESS_VIEW: '预可行性研究'
+}
+
+}

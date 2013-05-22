@@ -1,0 +1,1 @@
+Ext.define("xdfn.info.InfoKnowledge",{extend:"xdfn.info.ui.InfoKnowledge",initComponent:function(){var a=this;a.callParent(arguments)}});

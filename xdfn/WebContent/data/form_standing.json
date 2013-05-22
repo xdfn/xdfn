@@ -1,0 +1,17 @@
+{
+success:true,
+data: 
+{ID:'100000001', 
+V_TYPE:'保证金', 
+N_SUM:300000, 
+D_PAY_DATE:'2011-10-31', 
+V_PAY_STATUS:'已付',
+V_PAY_MODE:'电汇',
+V_PAYEE:'大唐集团',
+V_PAYER:'樊建华',
+V_INVOICE:'已回',
+V_SUBMIT_PAY:'已报销',
+V_REMARK:'安静了飞机dsl费'
+}
+
+}

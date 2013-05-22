@@ -1,0 +1,9 @@
+{
+total: 50,
+success: true,
+data:[
+{ID_VIEW: '10000001', V_JX_VIEW: '对双方首发的', N_DJRL_VIEW: 3, N_NUM_VIEW: 4, N_PRICE_VIEW: 50.5, N_DWQWJG_VIEW: 6.8, V_MEMO_VIEW: '大法师打发打发的'},
+{ID_VIEW: '10000002', V_JX_VIEW: '股份的三四个', N_DJRL_VIEW: 6, N_NUM_VIEW: 5, N_PRICE_VIEW: 108.9, N_DWQWJG_VIEW: 9.8, V_MEMO_VIEW: '大法师打发打发的'}
+
+]
+}

@@ -1,0 +1,11 @@
+{
+    success: true,
+    data: {
+    V_FAX_NO_VIEW: '10000012', 
+    V_FAX_TITLE_VIEW: '撒大法师打发撒打发的方法', 
+    V_FAX_TYPE_VIEW: '重要传真', 
+    D_FAX_DATE_VIEW: '2011-11-28', 
+    V_MEMO_VIEW: '撒大法师打发'
+    }
+    
+}

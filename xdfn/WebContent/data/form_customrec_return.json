@@ -1,0 +1,18 @@
+{
+    success: true,
+    data: {
+    ID_VIEW:'1000001',
+    D_REC_DATE_VIEW:'2011-10-30',
+    D_LEAVE_DATE_VIEW:'2011-11-02',
+    V_REC_LEVEL_VIEW:'高级',
+    V_REC_SUBJECT_VIEW:'就爱看lfs建档立卡减肥',
+    V_CUS_COMP_VIEW:'撒旦法的是',
+    V_REC_LOG_VIEW:'发生大法师打发',
+    V_REC_CARD_VIEW:'撒大法师打发',
+    V_REC_RESULT_VIEW:'撒发生的',
+    V_APPLIER_VIEW:'刘强',
+    V_CUS_BELONGED_VIEW:'太原办',
+    V_RECER_VIEW:'樊建华', 
+    V_PRO_ID_VIEW:'10000001'
+    }
+}

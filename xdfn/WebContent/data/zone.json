@@ -1,0 +1,148 @@
+{
+children:[{
+    V_NODE_NAME_VIEW: '国内',
+    children: [{
+        V_NODE_NAME_VIEW: '华北地区',
+        children: [{
+            V_NODE_NAME_VIEW: '北京',
+            ID_VIEW: '北京',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '天津',
+            ID_VIEW: '天津',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '河北',
+            ID_VIEW: '河北',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '山西',
+            ID_VIEW: '山西',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '内蒙古',
+            ID_VIEW: '内蒙古',
+            leaf: true
+        }]
+    },{
+        V_NODE_NAME_VIEW: '东北地区',
+        children: [{
+            V_NODE_NAME_VIEW: '辽宁',
+            ID_VIEW: '辽宁',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '吉林',
+            ID_VIEW: '吉林',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '黑龙江',
+            ID_VIEW: '黑龙江',
+            leaf: true
+        }]
+    },{
+        V_NODE_NAME_VIEW: '华东地区',
+        children: [{
+            V_NODE_NAME_VIEW: '上海',
+            ID_VIEW: '上海',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '江苏',
+            ID_VIEW: '江苏',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '浙江',
+            ID_VIEW: '浙江',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '安徽',
+            ID_VIEW: '安徽',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '福建',
+            ID_VIEW: '福建',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '江西',
+            ID_VIEW: '江西',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '山东',
+            ID_VIEW: '山东',
+            leaf: true
+        }]
+    },{
+        V_NODE_NAME_VIEW: '中南地区',
+        children: [{
+            V_NODE_NAME_VIEW: '河南',
+            ID_VIEW: '河南',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '湖北',
+            ID_VIEW: '湖北',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '湖南',
+            ID_VIEW: '湖南',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '广东',
+            ID_VIEW: '广东',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '广西',
+            ID_VIEW: '广西',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '海南',
+            ID_VIEW: '海南',
+            leaf: true
+        }]
+    },{
+        V_NODE_NAME_VIEW: '西南地区',
+        children: [{
+            V_NODE_NAME_VIEW: '重庆',
+            ID_VIEW: '重庆',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '四川',
+            ID_VIEW: '四川',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '贵州',
+            ID_VIEW: '贵州',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '云南',
+            ID_VIEW: '云南',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '西藏',
+            ID_VIEW: '西藏',
+            leaf: true
+        }]
+    },{
+        V_NODE_NAME_VIEW: '西北地区',
+        children: [{
+            V_NODE_NAME_VIEW: '陕西',
+            ID_VIEW: '陕西',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '甘肃',
+            ID_VIEW: '甘肃',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '青海',
+            ID_VIEW: '青海',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '宁夏',
+            ID_VIEW: '宁夏',
+            leaf: true
+        },{
+            V_NODE_NAME_VIEW: '新疆',
+            ID_VIEW: '新疆',
+            leaf: true
+        }]
+    }]
+}]
+}

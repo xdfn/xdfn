@@ -1,0 +1,10 @@
+{
+success:true,
+total: 50,
+data: [
+{ID_VIEW:'100000001', V_FILENAME_VIEW:'撒大法师打发大方', V_CODE_VIEW:'asdfasdfasdfa', V_TYPE_VIEW: '技术文档', V_RECEIVER_VIEW:'刮大风', V_SENDER_VIEW: '是大法师', V_MEMO_VIEW: '的发生大法师打发', V_FILE_ATT_VIEW: 'dsfsdfsdfs地方'},
+{ID_VIEW:'100000002', V_FILENAME_VIEW:'阿斯顿发撒旦法的是', V_CODE_VIEW:'fdgfdgsdfdsfd', V_TYPE_VIEW: '技术图纸', V_RECEIVER_VIEW:'大法师打', V_SENDER_VIEW: '是大法师', V_MEMO_VIEW: '的发生大法师打发', V_FILE_ATT_VIEW: 'dsfsdfsdfs地方'},
+{ID_VIEW:'100000003', V_FILENAME_VIEW:'是大法师的', V_CODE_VIEW:'gfdgfdgdffdsf', V_TYPE_VIEW: '其他', V_RECEIVER_VIEW:'防盗锁', V_SENDER_VIEW: '是大法师', V_MEMO_VIEW: '的发生大法师打发', V_FILE_ATT_VIEW: 'dsfsdfsdfs地方'}
+
+]
+}

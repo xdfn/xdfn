@@ -1,0 +1,1 @@
+Ext.define("Ext.ux.exporter.excelFormatter.Cell",{constructor:function(a){Ext.applyIf(a,{type:"String"});Ext.apply(this,a);Ext.ux.exporter.excelFormatter.Cell.superclass.constructor.apply(this,arguments)},render:function(){return this.tpl.apply(this)},tpl:new Ext.XTemplate('<ss:Cell ss:StyleID="{style}">','<ss:Data ss:Type="{type}"><![CDATA[{value}]]></ss:Data>',"</ss:Cell>")});

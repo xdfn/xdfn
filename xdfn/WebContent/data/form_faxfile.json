@@ -1,0 +1,9 @@
+{
+    success: true,
+    data: {
+    V_FAX_FILENAME: 'FADFSAFDSD', 
+    V_DETAIL: '水电费拉到就浪费', 
+    D_UP_DATE: '2011-10-28', 
+    V_MEMO: '萨菲拉等级分'
+    }
+}

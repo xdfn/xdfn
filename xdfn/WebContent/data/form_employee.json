@@ -1,0 +1,21 @@
+{
+    success: true,
+    data: {
+    ID:'10000001', 
+    V_USER_FK:'fanjianhua007', 
+    V_USER_ACC:'fanjianhua', 
+    V_USER_NAME:'樊建华', 
+    C_GENDER:'男', 
+    V_IDCARD:'1232131231231231', 
+    D_BIRTHDAY:'1979-01-01', 
+    V_DEPT_ID:'阿发达发达', 
+    V_PST_ID:'阿斯顿发生的发生的', 
+    V_PHONE1:'23423423423', 
+    V_PHONE2:'2314123414', 
+    V_EMAIL:'sdfa@falfal.com', 
+    D_ENTRY_DATE:'2009-10-01', 
+    D_EXP_DATE:'2012-10-01', 
+    V_HOME_ADDR:'到事发地发动时', 
+    V_PHOTO_URL:'resources/images/photo_p.png'
+    }
+}

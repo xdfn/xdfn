@@ -1,0 +1,1 @@
+Ext.define("xdfn.com.store.ComboTreeStore",{extend:"Ext.data.TreeStore",constructor:function(a){var b=this;a=a||{};b.callParent([Ext.apply({root:{expanded:true},fields:[{name:"ID_VIEW",type:"string"},{name:"V_NODE_NAME_VIEW",type:"string"}]},a)])}});

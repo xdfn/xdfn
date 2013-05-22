@@ -1,0 +1,1 @@
+Ext.define("xdfn.project.ProjPrediction",{extend:"xdfn.project.ui.ProjPrediction",initComponent:function(){var a=this;a.callParent(arguments)}});

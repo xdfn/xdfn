@@ -1,0 +1,1 @@
+Ext.define("Ext.ux.exporter.Formatter",{format:Ext.emptyFn,constructor:function(a){a=a||{};Ext.applyIf(a,{})}});

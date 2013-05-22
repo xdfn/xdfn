@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+    <!--Start: 数据库配置 Hibernate-->
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url"
+			value="jdbc:mysql://127.0.0.1:3306/xdfn">
+		</property>
+		<property name="username" value="root"></property>
+		<property name="password" value="xtcdma"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+		<!-- Start: 数据库映射文件配置 -->
+		<property name="mappingResources">
+			<list>
+				<value>com/xdfn/mode/TbDeptInfo.hbm.xml</value>
+				<value>com/xdfn/mode/TbRightInfo.hbm.xml</value>
+				<value>com/xdfn/mode/TbUserFamily.hbm.xml</value>
+				<value>com/xdfn/mode/TbUserRightMap.hbm.xml</value>
+				<value>com/xdfn/mode/TbUser.hbm.xml</value>
+				<value>com/xdfn/mode/TbFileAttch.hbm.xml</value>
+				<value>com/xdfn/mode/TbAgents.hbm.xml</value>
+				<value>com/xdfn/mode/TbCusInfo.hbm.xml</value>
+				<value>com/xdfn/mode/TbCusRela.hbm.xml</value>
+				<value>com/xdfn/mode/TbFax.hbm.xml</value>
+				<value>com/xdfn/mode/TbInistRela.hbm.xml</value>
+				<value>com/xdfn/mode/TbInstitute.hbm.xml</value>
+				<value>com/xdfn/mode/TbEmphPro.hbm.xml</value>
+				<value>com/xdfn/mode/TbProBid.hbm.xml</value>
+				<value>com/xdfn/mode/TbProFile.hbm.xml</value>
+				<value>com/xdfn/mode/TbProFollowup.hbm.xml</value>
+				<value>com/xdfn/mode/TbProRecode.hbm.xml</value>
+				<value>com/xdfn/mode/TbProTbtz.hbm.xml</value>
+				<value>com/xdfn/mode/TbProZb.hbm.xml</value>
+				<value>com/xdfn/mode/TbProject.hbm.xml</value>
+				<value>com/xdfn/mode/TbConCpjbj.hbm.xml</value>
+				<value>com/xdfn/mode/TbContractMgr.hbm.xml</value>
+				<value>com/xdfn/mode/TbHkjh.hbm.xml</value>
+				<value>com/xdfn/mode/TbHkmgr.hbm.xml</value>
+				<value>com/xdfn/mode/TbHkmx.hbm.xml</value>
+				<value>com/xdfn/mode/TbCusRec.hbm.xml</value>
+				<value>com/xdfn/mode/TbBulletin.hbm.xml</value>
+				<value>com/xdfn/mode/TbNews.hbm.xml</value>
+				<value>com/xdfn/mode/TbAgenda.hbm.xml</value>
+				<value>com/xdfn/mode/TbProFollowPs.hbm.xml</value>
+				<value>com/xdfn/mode/TbProExecDisp.hbm.xml</value>
+				<value>com/xdfn/mode/TbProExecSche.hbm.xml</value>
+				<value>com/xdfn/mode/TbProExecFjazjd.hbm.xml</value>
+				<value>com/xdfn/mode/TbServices.hbm.xml</value>
+				<value>com/xdfn/mode/TbSerPishi.hbm.xml</value>
+				<value>com/xdfn/mode/TbProDetail.hbm.xml</value>
+				<value>com/xdfn/mode/TbProZbjx.hbm.xml</value>
+				<value>com/xdfn/mode/TbProBidbook.hbm.xml</value>
+				<value>com/xdfn/mode/TbProKbjl.hbm.xml</value>
+				<value>com/xdfn/mode/TbProBidaccount.hbm.xml</value></list>
+				
+		</property>
+		<!-- End: 数据库映射文件配置 -->
+	</bean>
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+    <!-- End: 数据配置-->
+    
+	<!-- Start:DAO,ACTION映射配置 -->
+	
+	<!-- Start INFO PUBLIC CONFIG -->
+    <bean id="infopubDAO" class="com.xdfn.dao.impl.InfoPubDAOImpl">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+    <bean id="infopubDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager" />
+        </property>
+        <property name="target">
+            <ref local="infopubDAO" /> 
+        </property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+	<!-- End INFO PUBLIC CONFIG -->
+	
+	<!-- Start AGENDA CONFIG -->
+    <bean id="agendDAO" class="com.xdfn.dao.impl.AgendaImpl">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+    <bean id="agendDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager" />
+        </property>
+        <property name="target">
+            <ref local="agendDAO" /> 
+        </property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+	<!-- End AGENDA CONFIG -->
+
+    <!-- Start TB_SYS_USER CONFIG -->
+    <bean id="userDAO" class="com.xdfn.dao.impl.UserDAOImpl">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+    <bean id="userDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager" />
+        </property>
+        <property name="target">
+            <ref local="userDAO" /> 
+        </property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+	<!-- End TB_SYS_USER CONFIG -->
+	
+	<!-- Start DEPTINFO CONFIG -->
+    <bean id="deptDAO" class="com.xdfn.dao.impl.DeptInfoDAOImpl">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+    <bean id="deptDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager" />
+        </property>
+        <property name="target">
+            <ref local="deptDAO" /> 
+        </property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+	<!-- End DEPTINFO CONFIG -->
+	
+	<!-- Start cusInfoDAO CONFIG -->
+    <bean id="cusInfoDAO" class="com.xdfn.dao.impl.CusInfoDAOImpl">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+    <bean id="cusInfoDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager" />
+        </property>
+        <property name="target">
+            <ref local="cusInfoDAO" /> 
+        </property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+	<!-- End cusInfoDAO CONFIG -->
+	
+	<!-- Start cusRelaDAO CONFIG -->
+    <bean id="cusRelaDAO" class="com.xdfn.dao.impl.CusRelaDAOImpl">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+    <bean id="cusRelaDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager" />
+        </property>
+        <property name="target">
+            <ref local="cusRelaDAO" /> 
+        </property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+	<!-- End cusRelaDAO CONFIG -->
+	
+	<!-- Start servicesDAO CONFIG -->
+    <bean id="servicesDAO" class="com.xdfn.dao.impl.ServicesDAOImpl">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+    <bean id="servicesDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager" />
+        </property>
+        <property name="target">
+            <ref local="servicesDAO" /> 
+        </property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+	<!-- End servicesDAO CONFIG -->
+	
+	<!-- Start insRelaDAO CONFIG -->
+    <bean id="insRelaDAO" class="com.xdfn.dao.impl.InistRelaDAOImpl">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+    <bean id="insRelaDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager" />
+        </property>
+        <property name="target">
+            <ref local="insRelaDAO" /> 
+        </property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+	<!-- End insRelaDAO CONFIG -->
+	
+	<!-- Start instituteDAO CONFIG -->
+    <bean id="instituteDAO" class="com.xdfn.dao.impl.InstituteDAOImpl">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+    <bean id="instituteDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager" />
+        </property>
+        <property name="target">
+            <ref local="instituteDAO" /> 
+        </property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+	<!-- End instituteDAO CONFIG -->
+	
+	<!-- Start ProjectDAO CONFIG -->
+    <bean id="proDAO" class="com.xdfn.dao.impl.ProjectDAOImpl">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+    <bean id="proDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager" />
+        </property>
+        <property name="target">
+            <ref local="proDAO" /> 
+        </property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+	<!-- End ProjectDAO CONFIG -->
+	
+	<!-- Start ProjectExecDAO CONFIG -->
+    <bean id="proExecDAO" class="com.xdfn.dao.impl.ProExecDAOImpl">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+    <bean id="proExecDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager" />
+        </property>
+        <property name="target">
+            <ref local="proExecDAO" /> 
+        </property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+	<!-- End ProjectExecDAO CONFIG -->
+	
+	<!-- Start faxDAO CONFIG -->
+    <bean id="faxDAO" class="com.xdfn.dao.impl.FaxDAOImpl">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+    <bean id="faxDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager" />
+        </property>
+        <property name="target">
+            <ref local="faxDAO" /> 
+        </property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+	<!-- End faxDAO CONFIG -->
+	
+	<!-- Start fileAttachDAO CONFIG -->
+    <bean id="fileAttachDAO" class="com.xdfn.dao.impl.FileAttchDAOImpl">
+        <property name="sessionFactory">
+            <ref local="sessionFactory" />
+        </property>
+    </bean>
+    <bean id="fileAttachDAOProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager">
+            <ref bean="transactionManager" />
+        </property>
+        <property name="target">
+            <ref local="fileAttachDAO" /> 
+        </property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="insert*">PROPAGATION_REQUIRED</prop>
+                <prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+            </props>
+        </property>
+    </bean>
+	<!-- End fileAttachDAO CONFIG -->
+	
+	<bean name="/initOrg" class="com.xdfn.initprocessor.InitLoad" singleton="false">
+	    <property name="userDAO">
+            <ref bean="userDAOProxy" />
+        </property>
+        <property name="deptDAO">
+            <ref bean="deptDAOProxy" />
+        </property>
+	</bean>
+	
+	<!-- Start login config -->
+	<bean name="/login" class="com.xdfn.struts.action.LoginAction" singleton="false">
+	    <property name="userDAO">
+            <ref bean="userDAOProxy" />
+        </property>
+	</bean>
+	<bean name="/userManage" class="com.xdfn.struts.action.UserManageAction" singleton="false">
+	    <property name="userDAO">
+            <ref bean="userDAOProxy" />
+        </property>
+		<property name="deptDAO">
+            <ref bean="deptDAOProxy" />
+        </property>
+        <property name="agendDAO">
+            <ref bean="agendDAOProxy" />
+        </property>
+	</bean>
+	<!-- End login config -->
+	
+	<bean name="/deptManage" class="com.xdfn.struts.action.DeptInfoAction" singleton="false">
+	    <property name="userDAO">
+            <ref bean="userDAOProxy" />
+        </property>
+        <property name="deptDAO">
+            <ref bean="deptDAOProxy" />
+        </property>
+	</bean>
+	
+	<bean name="/cusManage" class="com.xdfn.struts.action.CusInfoManageAction" singleton="false">
+	    <property name="cusInfoDAO">
+            <ref bean="cusInfoDAOProxy" />
+        </property>
+        <property name="cusRelaDAO">
+            <ref bean="cusRelaDAOProxy" />
+        </property>
+        <property name="insRelaDAO">
+            <ref bean="insRelaDAOProxy" />
+        </property>
+        <property name="instituteDAO">
+            <ref bean="instituteDAOProxy" />
+        </property>
+	</bean>
+	
+	<bean name="/faxManage" class="com.xdfn.struts.action.FaxManageAction" singleton="false">
+	    <property name="faxDAO">
+            <ref bean="faxDAOProxy" />
+        </property>
+        <property name="fattDAO">
+            <ref bean="fileAttachDAOProxy" />
+        </property>
+	</bean>
+	
+	<bean name="/projectMgr" class="com.xdfn.struts.action.ProManageAction" singleton="false">
+	    <property name="proDAO">
+            <ref bean="proDAOProxy" />
+        </property>
+	</bean>
+	
+	<bean name="/proExec" class="com.xdfn.struts.action.ProExecAction" singleton="false">
+	    <property name="proExecDAO">
+            <ref bean="proExecDAOProxy" />
+        </property>
+	</bean>
+	
+	<bean name="/infoPub" class="com.xdfn.struts.action.InfoPubAction" singleton="false">
+	    <property name="infopubDAO">
+            <ref bean="infopubDAOProxy" />
+        </property>
+	</bean>
+	
+	<bean name="/serRec" class="com.xdfn.struts.action.ServicesAction" singleton="false">
+	    <property name="serviceDAO">
+            <ref bean="servicesDAOProxy" />
+        </property>
+	</bean>
+</beans>

@@ -1,0 +1,1 @@
+Ext.define("xdfn.com.store.CustListJsonStore",{extend:"Ext.data.Store",constructor:function(a){var b=this;a=a||{};b.callParent([Ext.apply({autoLoad:true,model:"Combox"},a)])}});

@@ -1,0 +1,10 @@
+{
+    success: true,
+    data: {
+    V_FAX_NO: '10000001', 
+    V_FAX_TITLE: '水电费拉到就浪费', 
+    V_FAX_TYPE: '项目传真', 
+    D_FAX_DATE: '2011-10-28', 
+    V_MEMO: '萨菲拉等级分'
+    }
+}

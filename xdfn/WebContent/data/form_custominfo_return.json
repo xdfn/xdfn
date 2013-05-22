@@ -1,0 +1,21 @@
+{
+    success: true,
+    data: {
+        ID_VIEW: '10000001',
+        V_CUSTOM_NAME_VIEW:'湘电风能', 
+        V_ZONE_VIEW:'湘潭', 
+        V_TYPE_BELONG_VIEW:'风电场业主', 
+        V_TYPE_TRADE_VIEW:'国有企业', 
+        V_PHASE_VIEW:'老客户', 
+        V_LEVEL_VIEW:'金牌客户', 
+        V_PARENT_NAME_VIEW:'湘电集团', 
+        V_REL_AGENT_VIEW:'', 
+        V_PHONE_VIEW:'0731-88888888', 
+        V_FAX_VIEW:'0731-88888888', 
+        V_POST_CODE_VIEW:'410000', 
+        V_EMAIL_VIEW:'xdfn@xdfn.com.cn',
+        V_WEB_VIEW:'http://www.xdfn.com.cn',
+        V_ADDRESS_VIEW:'湖南省湘潭市',
+        V_MEMO_VIEW:'安静了房间按劳动法'
+    }
+}

@@ -1,0 +1,59 @@
+{
+children:[{
+    ID_VIEW: '1',
+    V_PARENT_ID_VIEW: '-1',
+    N_NODE_LEVEL_VIEW: 1,
+    N_NODE_TYPE_VIEW: -1,
+    V_NODE_NAME_VIEW: '湘电风能',
+    children: [{
+        ID_VIEW: '11',
+        V_PARENT_ID_VIEW: '1',
+        N_NODE_LEVEL_VIEW: 2,
+        N_NODE_TYPE_VIEW: 1,
+        V_NODE_NAME_VIEW: '销售处',
+        children: [{
+            ID_VIEW: '111',
+            V_PARENT_ID_VIEW: '11',
+            N_NODE_LEVEL_VIEW: 3,
+            N_NODE_TYPE_VIEW: 1,
+            V_NODE_NAME_VIEW: '本部',
+            children: [{
+                ID_VIEW: '1111',
+                V_PARENT_ID_VIEW: '111',
+                N_NODE_LEVEL_VIEW: 4,
+                N_NODE_TYPE_VIEW: 1,
+                V_NODE_NAME_VIEW: '业务科',
+                leaf:true
+            },{
+                ID_VIEW: '1112',
+                V_PARENT_ID_VIEW: '111',
+                N_NODE_LEVEL_VIEW: 4,
+                N_NODE_TYPE_VIEW: 1,
+                V_NODE_NAME_VIEW: '售后服务中心',
+                leaf: true
+            }]
+        },{
+            ID_VIEW: '112',
+            V_PARENT_ID_VIEW: '11',
+            N_NODE_LEVEL_VIEW: 3,
+            N_NODE_TYPE_VIEW: 1,
+            V_NODE_NAME_VIEW: '驻外办',
+            children: [{
+                ID_VIEW: '1121',
+                V_PARENT_ID_VIEW: '112',
+                N_NODE_LEVEL_VIEW: 4,
+                N_NODE_TYPE_VIEW: 1,
+                V_NODE_NAME_VIEW: '太原办',
+                leaf: true
+            },{
+                ID_VIEW: '1122',
+                V_PARENT_ID_VIEW: '112',
+                N_NODE_LEVEL_VIEW: 4,
+                N_NODE_TYPE_VIEW: 1,
+                V_NODE_NAME_VIEW: '蒙辽办',
+                leaf: true
+            }]
+        }]
+    }]
+}]
+}
