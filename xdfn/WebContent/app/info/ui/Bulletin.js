@@ -19,12 +19,15 @@ Ext.define('xdfn.info.ui.Bulletin', {
         var me = this;
         me.items = [
             {
-                xtype: 'form',
+            	xtype: 'form',
                 height: 80,
-                layout: {
-                    type: 'absolute'
+                defaults: {
+                    labelWidth: 60
                 },
-                bodyPadding: 5,
+                layout: {
+                    type: 'column'
+                },
+                bodyPadding: 10,
                 bodyStyle: 'background-color:#d8e6f4',
                 collapsed: true,
                 collapsible: true,
@@ -34,56 +37,45 @@ Ext.define('xdfn.info.ui.Bulletin', {
                 region: 'north',
                 items: [
                     {
-                        xtype: 'textareafield',
-                        height: 21,
-                        width: 240,
+                    	xtype: 'textfield',
+                        margin: '2 20 10 0',
                         name: 'V_TITLE',
-                        fieldLabel: '公告标题',
-                        labelWidth: 60,
-                        x: 10,
-                        y: 10
+                        fieldLabel: '公告标题'
                     },
                     {
                         xtype: 'datefield',
-                        margin: '0 5 0 10',
+                        margin: '2 20 10 0',
                         name: 'D_DATE_START',
-                        fieldLabel: '起始日期',
-                        labelWidth: 60,
-                        editable: false,
-                        format: 'Y年m月d日',
-                        submitFormat: 'Y-m-d',
+                        fieldLabel: '发布时间',
                         vtype: 'dateRange',
                         dateRange: {begin: 'D_DATE_START', end: 'D_DATE_END', parent: me},
-                        x: 260,
-                        y: 10
+                        format: 'Y年m月d日',
+                        submitFormat: 'Y-m-d',
+                        editable: false
                     },
                     {
                         xtype: 'datefield',
-                        margin: '0 5 0 10',
+                        margin: '2 20 10 0',
                         name: 'D_DATE_END',
                         fieldLabel: '到',
-                        labelWidth: 20,
-                        editable: false,
-                        format: 'Y年m月d日',
-                        submitFormat: 'Y-m-d',
                         vtype: 'dateRange',
                         dateRange: {begin: 'D_DATE_START', end: 'D_DATE_END', parent: me},
-                        x: 490,
-                        y: 10
+                        labelWidth: 20,
+                        format: 'Y年m月d日',
+                        submitFormat: 'Y-m-d',
+                        editable: false
                     },
                     {
                         xtype: 'button',
+                        margin: '2 10 10 0',
                         iconCls: 'search_btn',
-                        text: '查找',
-                        x: 690,
-                        y: 10
+                        text: '查找'
                     },
                     {
                         xtype: 'button',
+                        margin: '2 20 10 0',
                         iconCls: 'reset_btn',
-                        text: '重置',
-                        x: 750,
-                        y: 10
+                        text: '重置'
                     }
                 ]
             },
