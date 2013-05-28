@@ -377,7 +377,7 @@ Ext.define('xdfn.user.ui.EmployeeManager', {
 		                            {
 		                                xtype: 'button',
 		                                iconCls: 'ext_xls',
-		                                text: '导出 '
+		                                text: '导出 家属'
 		                            }
                                 ]
                             },

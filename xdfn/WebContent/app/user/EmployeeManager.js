@@ -37,7 +37,7 @@ Ext.define('xdfn.user.EmployeeManager', {
         me.down('button[text="删除"]').on('click', me.OnDeleteDeptDutyBtnClick, me);
         me.down('button[text="重置密码"]').on('click', me.OnResetPasswordBtnClick, me);
         me.down('button[text="导出"]').on('click', me.OnExportEmployeeBtnClick, me);
-        me.down('button[text="导出 "]').on('click', me.OnExportFamilyBtnClick, me);
+        me.down('button[text="导出家属 "]').on('click', me.OnExportFamilyBtnClick, me);
         me.down('gridpanel').on('select', me.OnEmployeeGridSelect, me);
         me.down('treepanel').on('select', me.OnDeptDutyTreeSelect, me);
         me.empStore.on('load', me.OnEmployeeStoreLoad, me);
