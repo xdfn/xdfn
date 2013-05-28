@@ -88,7 +88,7 @@ Ext.define('xdfn.user.ui.EmployeeManager', {
                             labelWidth: 60
                         },
                         layout: {
-                            type: 'absolute'
+                        	type: 'column'
                         },
                         bodyPadding: 10,
                         bodyStyle: 'background-color:#d8e6f4',
@@ -103,42 +103,29 @@ Ext.define('xdfn.user.ui.EmployeeManager', {
                                 xtype: 'textfield',
                                 name: 'V_USER_NAME',
                                 fieldLabel: '员工姓名',
+                                margin: '2 20 10 0',
                                 enforceMaxLength: true,
-                                maxLength: 60
+                                maxLength: 30
                             },
                             {
-                                xtype: 'datefield',
-                                name: 'D_ENTRY_DATE',
-                                fieldLabel: '入职日期',
-                                editable: false,
-                                format: 'Y年m月d日',
-                                submitFormat: 'Y-m-d',
-                                x: 240,
-                                y: 10
-                            },
-                            {
-                                xtype: 'datefield',
-                                name: 'D_EXP_DATE',
-                                fieldLabel: '合同到期',
-                                editable: false,
-                                format: 'Y年m月d日',
-                                submitFormat: 'Y-m-d',
-                                x: 470,
-                                y: 10
+                                xtype: 'textfield',
+                                name: 'V_MOBILE',
+                                fieldLabel: '手机号码',
+                                margin: '2 20 10 0',
+                                enforceMaxLength: true,
+                                maxLength: 20
                             },
                             {
                                 xtype: 'button',
                                 iconCls: 'search_btn',
-                                text: '查找',
-                                x: 700,
-                                y: 10
+                                margin: '2 10 10 0',
+                                text: '查找'
                             },
                             {
                                 xtype: 'button',
                                 iconCls: 'reset_btn',
-                                text: '重置',
-                                x: 760,
-                                y: 10
+                                margin: '2 10 10 0',
+                                text: '重置'
                             }
                         ]
                     },
