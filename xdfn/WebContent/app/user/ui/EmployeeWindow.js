@@ -82,7 +82,7 @@ Ext.define('xdfn.user.ui.EmployeeWindow', {
                         allowBlank: false,
                         blankText: '不能为空！',
                         emptyText: '请输入身份证',
-                        regex: /^[\d]*$/,
+                        regex: /^[\d]*$|^[\d]*[x]$/,
                         regexText: '输入格式不正确！',
                         enforceMaxLength: true,
                         maxLength: 18
