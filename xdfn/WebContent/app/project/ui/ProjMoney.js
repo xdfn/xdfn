@@ -275,6 +275,7 @@ Ext.define('xdfn.project.ui.ProjMoney', {
                 bodyStyle: 'border:0px',
                 height: 320,
                 collapsible: true,
+                titleCollapse: true,
                 title: '回款信息',
                 region: 'south',
                 split: true,

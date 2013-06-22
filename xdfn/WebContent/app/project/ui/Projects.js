@@ -312,6 +312,7 @@ Ext.define('xdfn.project.ui.Projects', {
                 bodyStyle: 'border:0px',
                 height: 240,
                 collapsible: true,
+                titleCollapse: true,
                 title: '项目附属信息',
                 activeTab: 0,
                 region: 'south',

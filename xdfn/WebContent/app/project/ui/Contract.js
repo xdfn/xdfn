@@ -361,6 +361,7 @@ Ext.define('xdfn.project.ui.Contract', {
                 xtype: 'gridpanel',
                 height: 200,
                 collapsible: true,
+                titleCollapse: true,
                 title: '合同产品清单',
                 region: 'south',
                 split: true,

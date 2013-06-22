@@ -276,6 +276,7 @@ Ext.define('xdfn.project.ui.ProjExec', {
                 bodyStyle: 'border:0px',
                 height: 320,
                 collapsible: true,
+                titleCollapse: true,
                 title: '执行信息',
                 activeTab: 0,
                 split: true

@@ -121,6 +121,7 @@ Ext.define('xdfn.project.ui.ProjFollow', {
                 //height: 200,
                 //collapsed: true,
                 collapsible: true,
+                titleCollapse: true,
                 title: '批示信息',
                 region: 'south',
                 split: true,

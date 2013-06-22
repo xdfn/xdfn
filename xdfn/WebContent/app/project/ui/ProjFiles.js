@@ -100,6 +100,7 @@ Ext.define('xdfn.project.ui.ProjFiles', {
                 //height: 200,
                 //collapsed: true,
                 collapsible: true,
+                titleCollapse: true,
                 title: '档案清单',
                 region: 'south',
                 split: true,

@@ -268,6 +268,7 @@ Ext.define('xdfn.customer.ui.CustomInfo', {
                 xtype: 'gridpanel',
                 height: 200,
                 collapsible: true,
+                titleCollapse: true,
                 title: '客户联系人',
                 floatable: false,
                 region: 'south',

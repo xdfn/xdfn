@@ -240,6 +240,7 @@ Ext.define('xdfn.service.ui.Service', {
                 xtype: 'gridpanel',
                 height: 200,
                 collapsible: true,
+                titleCollapse: true,
                 title: '批示信息',
                 region: 'south',
                 split: true,
