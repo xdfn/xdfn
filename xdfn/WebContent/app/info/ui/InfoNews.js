@@ -32,7 +32,7 @@ Ext.define('xdfn.info.ui.InfoNews', {
                 collapsible: true,
                 title: '查询资讯',
                 titleCollapse: true,
-                floatable: false,
+                //floatable: false,
                 region: 'north',
                 items: [
                     {

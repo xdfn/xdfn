@@ -139,6 +139,12 @@ Ext.define('xdfn.service.ui.Service', {
                     },
                     {
                         xtype: 'gridcolumn',
+                        width: 150,
+                        dataIndex: 'V_STATUS_VIEW',
+                        text: '服务状态'
+                    },
+                    {
+                        xtype: 'gridcolumn',
                         dataIndex: 'V_OFFICE_BRANCH_VIEW',
                         text: '责任部门'
                     },
@@ -156,7 +162,7 @@ Ext.define('xdfn.service.ui.Service', {
                     {
                         xtype: 'gridcolumn',
                         dataIndex: 'V_CUST_LINKER_VIEW',
-                        text: '客户联系人'
+                        text: '联系人'
                     },
                     {
                         xtype: 'gridcolumn',
@@ -176,12 +182,6 @@ Ext.define('xdfn.service.ui.Service', {
                         dataIndex: 'D_RESPONSE_TIME_VIEW',
                         text: '最迟回复时间',
                         format: 'Y年m月d日'
-                    },
-                    {
-                        xtype: 'gridcolumn',
-                        width: 150,
-                        dataIndex: 'V_STATUS_VIEW',
-                        text: '服务状态'
                     },
                     {
                         xtype: 'gridcolumn',

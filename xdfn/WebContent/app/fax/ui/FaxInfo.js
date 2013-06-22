@@ -32,7 +32,7 @@ Ext.define('xdfn.fax.ui.FaxInfo', {
                 collapsible: true,
                 title: '查询传真',
                 titleCollapse: true,
-                floatable: false,
+                //floatable: false,
                 region: 'north',
                 items: [
                     {

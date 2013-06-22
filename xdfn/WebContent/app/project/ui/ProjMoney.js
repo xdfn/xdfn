@@ -35,7 +35,7 @@ Ext.define('xdfn.project.ui.ProjMoney', {
                 collapsed: true,
                 collapsible: true,
                 titleCollapse: true,
-                floatable: false,
+                //floatable: false,
                 title: '查询合同',
                 region: 'north',
                 items: [

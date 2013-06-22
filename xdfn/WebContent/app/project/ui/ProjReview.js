@@ -31,7 +31,7 @@ Ext.define('xdfn.project.ui.ProjReview', {
                 collapsed: true,
                 collapsible: true,
                 titleCollapse: true,
-                floatable: false,
+                //floatable: false,
                 title: '查询审核信息',
                 region: 'north',
                 items: [

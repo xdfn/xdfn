@@ -31,7 +31,7 @@ Ext.define('xdfn.project.ui.Projects', {
                 collapsed: true,
                 collapsible: true,
                 titleCollapse: true,
-                floatable: false,
+                //floatable: false,
                 title: '查询项目',
                 region: 'north',
                 items: [

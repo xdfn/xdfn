@@ -29,7 +29,7 @@ Ext.define('xdfn.customer.ui.CustomReceive', {
                 collapsible: true,
                 title: '查询客户接待',
                 titleCollapse: true,
-                floatable: false,
+                //floatable: false,
                 region: 'north',
                 items: [
                     {

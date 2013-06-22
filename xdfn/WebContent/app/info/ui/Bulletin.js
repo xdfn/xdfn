@@ -33,7 +33,7 @@ Ext.define('xdfn.info.ui.Bulletin', {
                 collapsible: true,
                 title: '查询公告',
                 titleCollapse: true,
-                floatable: false,
+                //floatable: false,
                 region: 'north',
                 items: [
                     {

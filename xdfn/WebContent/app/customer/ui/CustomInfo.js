@@ -32,7 +32,7 @@ Ext.define('xdfn.customer.ui.CustomInfo', {
                 collapsible: true,
                 titleCollapse: true,
                 title: '查询客户',
-                floatable: false,
+                //floatable: false,
                 region: 'north',
                 items: [
                     {

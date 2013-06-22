@@ -106,7 +106,7 @@ Ext.define('xdfn.user.ui.RightsManager', {
                         collapsible: true,
                         title: '查询用户',
                         titleCollapse: true,
-                        floatable: false,
+                        //floatable: false,
                         region: 'north',
                         items: [
                             {

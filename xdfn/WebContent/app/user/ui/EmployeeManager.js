@@ -96,7 +96,7 @@ Ext.define('xdfn.user.ui.EmployeeManager', {
                         collapsible: true,
                         title: '查询员工',
                         titleCollapse: true,
-                        floatable: false,
+                        //floatable: false,
                         region: 'north',
                         items: [
                             {

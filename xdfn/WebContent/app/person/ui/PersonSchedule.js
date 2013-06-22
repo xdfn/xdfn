@@ -41,7 +41,7 @@ Ext.define('xdfn.person.ui.PersonSchedule', {
                                 collapsible: true,
                                 title: '查询日程',
                                 titleCollapse: true,
-                                floatable: false,
+                                //floatable: false,
                                 region: 'north',
                                 items: [
                                     {
