@@ -9,7 +9,7 @@
 			value="com.mysql.jdbc.Driver">
 		</property>
 		<property name="url"
-			value="jdbc:mysql://127.0.0.1:3306/xdfn">
+			value="jdbc:mysql://localhost:3306/xdfn">
 		</property>
 		<property name="username" value="root"></property>
 		<property name="password" value="xtcdma"></property>
