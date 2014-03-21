@@ -13,8 +13,8 @@ Ext.Loader.setPath('Ext.ux', './app/ux');
 
 Ext.application({
     name: 'xdfn',
-    //appFolder: 'app_builds',
     appFolder: 'app',
+    //appFolder: 'app_builds',
     
     launch: function() {
     	Ext.QuickTips.init();
